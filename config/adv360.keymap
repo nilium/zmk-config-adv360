@@ -36,11 +36,11 @@
 
         keypad {
             bindings = <
-    &kp EQUAL     &kp N1      &kp N2    &kp N3     &kp N4      &kp N5            &trans             &mo 3     &kp N6  &kp KP_NUM  &kp KP_EQUAL      &kp KP_DIVIDE    &kp KP_MULTIPLY   &kp MINUS
-      &kp TAB      &kp Q       &kp W     &kp E      &kp R       &kp T             &none             &none      &kp Y   &kp KP_N7     &kp KP_N8          &kp KP_N9       &kp KP_MINUS    &kp BSLH
- &kp CAPSLOCK      &kp A       &kp S     &kp D      &kp F       &kp G             &none  &kp LEFT_COMMAND   &kp LALT                            &kp RIGHT_CONTROL  &kp RIGHT_COMMAND       &none     &kp H  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
-    &kp LSHFT      &kp Z       &kp X     &kp C      &kp V       &kp B             &none             &none   &kp HOME       &none         &none          &kp PG_UP              &none       &none     &kp N  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
-        &mo 2  &kp GRAVE  &kp INSERT  &kp LEFT  &kp RIGHT  &kp DELETE  &kp LEFT_CONTROL           &kp END  &kp PG_DN   &kp ENTER     &kp KP_N0             &kp UP           &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
+    &kp EQUAL     &kp N1             &kp N2      &kp N3           &kp N4      &kp N5            &trans             &mo 3     &kp N6  &kp KP_NUM  &kp KP_EQUAL      &kp KP_DIVIDE    &kp KP_MULTIPLY   &kp MINUS
+      &kp TAB      &kp Q  &kp C_VOLUME_DOWN  &kp K_MUTE  &kp C_VOLUME_UP       &kp T            &trans            &trans      &kp Y   &kp KP_N7     &kp KP_N8          &kp KP_N9       &kp KP_MINUS    &kp BSLH
+ &kp CAPSLOCK      &kp A         &kp C_PREV    &kp C_PP       &kp C_NEXT       &kp G            &trans  &kp LEFT_COMMAND   &kp LALT                            &kp RIGHT_CONTROL  &kp RIGHT_COMMAND      &trans     &kp H  &kp KP_N4  &kp KP_N5  &kp KP_N6   &kp KP_PLUS    &kp SQT
+    &kp LSHFT      &kp Z              &kp X       &kp C            &kp V       &kp B             &none             &none   &kp HOME       &none         &none          &kp PG_UP              &none       &none     &kp N  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
+       &tog 4  &kp GRAVE         &kp INSERT    &kp LEFT        &kp RIGHT  &kp DELETE  &kp LEFT_CONTROL           &kp END  &kp PG_DN   &kp ENTER     &kp KP_N0             &kp UP           &kp DOWN  &kp KP_DOT  &kp RBKT      &mo 2
             >;
         };
 
@@ -66,13 +66,12 @@
 
         gaming {
             bindings = <
- &kp EQUAL     &kp N1  &kp N2    &kp N3     &kp N4            &kp N5       &tog 1             &mo 3     &kp N6     &kp N7     &kp N8             &kp N9             &kp N0  &kp MINUS
-   &kp TAB      &kp Q   &kp W     &kp E      &kp R             &kp T        &none    &macro_kinesis      &kp Y      &kp U      &kp I              &kp O              &kp P   &kp BSLH
-   &kp ESC      &kp A   &kp S     &kp D      &kp F             &kp G        &none  &kp LEFT_COMMAND   &kp LALT                        &kp RIGHT_CONTROL  &kp RIGHT_COMMAND      &none     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
- &kp LSHFT      &kp Z   &kp X     &kp C      &kp V             &kp B        &none             &none   &kp HOME      &none      &none          &kp PG_UP              &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-     &mo 3  &kp GRAVE   &mo 1  &kp LEFT  &kp RIGHT  &kp LEFT_CONTROL    &kp SPACE           &kp END  &kp PG_DN  &kp ENTER  &kp SPACE           &kp DOWN             &kp UP   &kp LBKT  &kp RBKT   &mo 2
+ &kp EQUAL     &kp N1  &kp N2    &kp N3     &kp N4            &kp N5     &tog 1             &mo 3     &kp N6     &kp N7     &kp N8             &kp N9             &kp N0  &kp MINUS
+   &kp TAB      &kp Q   &kp W     &kp E      &kp R             &kp T      &none    &macro_kinesis      &kp Y      &kp U      &kp I              &kp O              &kp P   &kp BSLH
+   &kp ESC      &kp A   &kp S     &kp D      &kp F             &kp G      &none  &kp LEFT_COMMAND   &kp LALT                        &kp RIGHT_CONTROL  &kp RIGHT_COMMAND      &none     &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
+ &kp LSHFT      &kp Z   &kp X     &kp C      &kp V             &kp B      &none             &none   &kp HOME      &none      &none          &kp PG_UP              &none      &none     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+    &trans  &kp GRAVE   &mo 1  &kp LEFT  &kp RIGHT  &kp LEFT_CONTROL  &kp SPACE           &kp END  &kp PG_DN  &kp ENTER  &kp SPACE           &kp DOWN             &kp UP   &kp LBKT  &kp RBKT   &mo 2
             >;
         };
-
     };
 };
